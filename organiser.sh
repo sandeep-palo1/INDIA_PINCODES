@@ -14,5 +14,8 @@ unzip india_pincodes.dbf.zip
 unzip india_pincodes.sbn.zip
 unzip india_pincodes.shx.zip
 
+# Delete all zip files
+rm -f *.zip *.z0*
+
 # Converting to GeoJSON
 # ogr2ogr -f GeoJSON india_pincodes_full.geojson india_pincodes_full.shp
